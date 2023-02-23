@@ -5,8 +5,6 @@ class Solution:
         return self.validateInput() and self.isValidRow() and self.isValidColumn() and self.isValidMatrix()
 
     def validateInput(self):
-        print(isinstance(self.input, list))
-        
         if isinstance(self.input, list) and len(self.input) == 9:
             for rowNumber, row in enumerate(self.input):
                 if len(row) != 9:
